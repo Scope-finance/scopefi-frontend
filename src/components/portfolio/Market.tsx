@@ -183,7 +183,12 @@ const Market = ({ assets }: MarketProps) => {
                           : BITCOINICON
                       }
                     />
-                    <Text mr={1} fontFamily='jakarta'>
+                    <Text
+                      mr={1}
+                      color='#9EAEC7'
+                      fontWeight='bold'
+                      fontFamily='jakarta'
+                    >
                       {/* sBTC */}
                       {item.assetSymbol}
                     </Text>

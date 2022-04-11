@@ -119,7 +119,12 @@ const Portfolio = ({ assets }: PortfolioProps) => {
                   >
                     <Flex w='100%' flex={{ base: "0.4" }} alignItems='center'>
                       <Img mr={1} src={BITCOINICON} />
-                      <Text mr={1} fontFamily='jakarta'>
+                      <Text
+                        mr={1}
+                        color='#9EAEC7'
+                        fontWeight='bold'
+                        fontFamily='jakarta'
+                      >
                         {item.assetSymbol}
                       </Text>
                       <Text color='#9EAEC7' fontSize='12px'>
