@@ -58,7 +58,7 @@ function ConnectModal({ isOpen, onClose }: ConnectModalProps) {
               alignItems='center'
               justifyContent='space-between'
             >
-              <Text fontSize='14px' fontFamily='jakarta-bold'>
+              <Text fontSize='14px' color='#EFF1F6' fontFamily='jakarta-bold'>
                 Metamask
               </Text>
               <Img src={METAMASK} />

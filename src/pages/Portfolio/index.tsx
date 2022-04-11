@@ -49,7 +49,7 @@ const Dashboard = () => {
               onMouseEnter={() => setPortfoliohover(true)}
               cursor='pointer'
               w='100%'
-              color={portfoliohover ? "#2BA765" : "none"}
+              color={portfoliohover ? "#2BA765" : "#ffffff"}
               bgColor={
                 portfoliohover
                   ? "#092A33"
@@ -96,7 +96,7 @@ const Dashboard = () => {
                   ? "#092A33"
                   : "none"
               }
-              color={markethover ? "#2BA765" : "none"}
+              color={markethover ? "#2BA765" : "#ffffff"}
               mb={20}
               onClick={() => setActiveSection("market")}
             >

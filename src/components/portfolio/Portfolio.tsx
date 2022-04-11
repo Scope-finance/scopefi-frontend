@@ -152,7 +152,7 @@ const Portfolio = ({ assets }: PortfolioProps) => {
                     </Flex>
                   </Flex>
                   <Flex mt={2} w='100%' px={0} p={0}>
-                    <Divider />
+                    <Divider color='#253041' />
                   </Flex>
                 </Flex>
               ) : null
