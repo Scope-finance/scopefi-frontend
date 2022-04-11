@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "jakarta";
+  src: local("normal"), url(./fonts/normal.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "jakarta-bold";
+  src: local("bold"), url(./fonts/bold.ttf) format("truetype");
+}

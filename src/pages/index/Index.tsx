@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { Box, Flex, Text, Img, Button, useMediaQuery } from "@chakra-ui/react";
 import SCOPE from "../../assets/scope.svg";
 import META from "../../assets/meta.svg";
@@ -16,6 +16,8 @@ import PHIDEL from "../../assets/phidel.svg";
 import JAMES from "../../assets/james.svg";
 import FOOTERLOGO from "../../assets/logofooter.svg";
 import COPYRIGHT from "../../assets/copyright.svg";
+import { useWeb3React } from "@web3-react/core";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [startTab] = useMediaQuery("(max-width: 950px)");
@@ -23,6 +25,9 @@ const Index = () => {
   const [isMobile] = useMediaQuery("(max-width: 560px)");
   const [startSmallScreen] = useMediaQuery("(max-width: 1440px)");
   const [endSmallScrren] = useMediaQuery("(min-width: 1309px)");
+  const { account } = useWeb3React();
+
+  console.log(account);
 
   const scrollToRef = (ref: any) =>
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -82,18 +87,20 @@ const Index = () => {
               >
                 About Scope
               </Text>
-              <Flex
-                bg='rgba(43, 167, 101, 0.2);'
-                borderRadius='7px'
-                py={3}
-                px={6}
-                fontSize={isMobile ? "14px" : undefined}
-                cursor='pointer'
-              >
-                <Text fontWeight='bold' color='#55C388'>
-                  Launch App
-                </Text>
-              </Flex>
+              <Link to='/dashboard'>
+                <Flex
+                  bg='rgba(43, 167, 101, 0.2);'
+                  borderRadius='7px'
+                  py={3}
+                  px={6}
+                  fontSize={isMobile ? "14px" : undefined}
+                  cursor='pointer'
+                >
+                  <Text fontWeight='bold' color='#55C388'>
+                    Launch App
+                  </Text>
+                </Flex>
+              </Link>
             </Flex>
           </Flex>
           <Flex
