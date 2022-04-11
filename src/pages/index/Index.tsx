@@ -193,28 +193,35 @@ const Index = () => {
               fontWeight='bold'
               justifyContent='center'
             >
-              <Flex
-                bgColor='#2BA765'
-                px={20}
-                py={3}
-                mr={isMobile ? undefined : 10}
-                borderRadius='7px'
-                justifyContent={isMobile ? "center" : undefined}
-                mb={isMobile ? 5 : undefined}
-                cursor='pointer'
+              <Link to='/dashboard'>
+                <Flex
+                  bgColor='#2BA765'
+                  px={20}
+                  py={3}
+                  mr={isMobile ? undefined : 10}
+                  borderRadius='7px'
+                  justifyContent={isMobile ? "center" : undefined}
+                  mb={isMobile ? 5 : undefined}
+                  cursor='pointer'
+                >
+                  <Text color='#FFFFFF'>Use Scope</Text>
+                </Flex>
+              </Link>
+              <a
+                href='https://godswill-adigwe.gitbook.io/untitled/guides/getting-test-tokens'
+                target='_blank'
               >
-                <Text color='#FFFFFF'>Use Scope</Text>
-              </Flex>
-              <Flex
-                borderRadius='7px'
-                justifyContent={isMobile ? "center" : undefined}
-                bgColor='#092C39'
-                px={20}
-                py={3}
-                cursor='pointer'
-              >
-                <Text color='#95ECBD'>How it works</Text>
-              </Flex>
+                <Flex
+                  borderRadius='7px'
+                  justifyContent={isMobile ? "center" : undefined}
+                  bgColor='#092C39'
+                  px={20}
+                  py={3}
+                  cursor='pointer'
+                >
+                  <Text color='#95ECBD'>How it works</Text>
+                </Flex>
+              </a>
             </Flex>
           </Flex>
         </Box>
