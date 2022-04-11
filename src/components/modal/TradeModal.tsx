@@ -157,7 +157,7 @@ function TradeModal({ isOpen, onOpen, onClose, asset }: TradeModalProps) {
                 flex='0.47'
                 onClick={() => setBuy(true)}
               >
-                <Text fontSize='14px' fontFamily='jakarta-bold'>
+                <Text color='#EFF1F6' fontSize='14px' fontFamily='jakarta-bold'>
                   Buy
                 </Text>
               </Flex>
@@ -171,7 +171,7 @@ function TradeModal({ isOpen, onOpen, onClose, asset }: TradeModalProps) {
                 onClick={() => setBuy(false)}
                 bgColor={!buy ? "#192139" : "#090F1F"}
               >
-                <Text fontSize='14px' fontFamily='jakarta-bold'>
+                <Text color='#EFF1F6' fontSize='14px' fontFamily='jakarta-bold'>
                   Sell
                 </Text>
               </Flex>
