@@ -39,7 +39,11 @@ function ConnectModal({ isOpen, onClose }: ConnectModalProps) {
         <ModalContent bgColor='#0E162F'>
           <ModalBody py={{ base: 5 }}>
             <Flex alignItems='center'>
-              <Text fontFamily='jakarta-bold' fontSize={{ base: "18px" }}>
+              <Text
+                color='#EFF1F6'
+                fontFamily='jakarta-bold'
+                fontSize={{ base: "18px" }}
+              >
                 Connect wallet
               </Text>
 
